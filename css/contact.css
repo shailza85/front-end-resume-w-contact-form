@@ -1,0 +1,55 @@
+/* contact page css */
+
+* {
+    box-sizing: border-box;
+  }
+  body{
+    background-color:#f5fffa;
+    line-height: 1.5;
+}
+
+.formContainer{
+border-radius: 5px;
+padding: 30px;
+display: flex;
+justify-content: space-evenly;
+
+}
+
+h1 {
+    margin: 10px 0px 10px 0px;
+    font-size:30px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #228b22;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0px 15px 0px;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0px 15px 0px;
+    height: 150px;
+}
+input[type=submit]{
+    background-color: #228b22;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+label{
+    font-weight: bolder;
+    color: #228b22;
+}
+
+#errorMsg {
+    color: #ff0000;
+    font-weight: bolder;
+    font-size: 20px;
+}
+

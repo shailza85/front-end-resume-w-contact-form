@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>milestone-1-front-end-resume-w-contact-form-shailza85</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="resume with contact form">
+    <meta name="author" content="Shailza Sharma Contact Form">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <script src="js/scripts.js" defer></script>
+   </head>
+
+<body>
+    <header>
+        <h1>Contact Form</h1>
+    </header>
+    <main>
+        <div class="formContainer">
+            <form name="emailForm" id="emailForm" action="mailto:shailza@ualberta.ca" method="POST" enctype="text/plain">
+
+                <div id="errorMsg"></div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Your first name here...">
+                <br/>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name here...">
+                <br />
+                <label for="emailId">Email:</label>
+                <input type="text" id="emailId" name="emailId" placeholder="Your email here...">
+                <br/>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Your subject here...">
+                <br/>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+                <br/>
+                <input type="submit" id="submit" value="Send Email">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

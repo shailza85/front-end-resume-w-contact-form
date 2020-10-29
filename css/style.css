@@ -1,0 +1,249 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "footer footer footer footer";
+  }
+  .header { grid-area: header; }
+  .main { grid-area: main; }
+  .footer { grid-area: footer; }
+
+
+  /* index page css */
+
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color:#f1f1f1;
+    line-height: 1.5;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*.container {
+    margin-top: 16px;
+}*/
+.headerNav {
+    padding-bottom:15px;
+}
+
+.logo img {
+    width: 100px;
+    margin: 25px 25px;
+    float: left;
+    border: outset ;
+}
+
+.leftColumn {     
+    width: 100%;
+    float: left;
+    padding:0 8px;
+    color: #000;
+    background-color: #f5fffa;
+    box-shadow: 0 2px 5px 0 #222, 0 2px 10px 0 #222; /* @link https://css-tricks.com/almanac/properties/b/box-shadow/
+    @link https://www.w3schools.com/cssref/func_rgba.asp*/
+    margin-bottom: 3px;
+ }
+.rightColumn {
+    float: left;
+    padding: 0 8px;
+    width: 100%;  
+    color: #000;
+    background-color: #f5fffa;
+    box-shadow: 0 2px 5px 0 #222, 0 2px 10px 0 #222;;
+    margin-bottom: 2px;
+}
+.infoSection {
+    padding: 16px 16px;
+   
+  
+    font-style: italic;
+    font-weight: bold;
+    color: #00008b;
+    word-spacing: 1.5px;
+    line-height: 30px;
+}
+
+.infoSection > p:nth-child(2) {
+    text-align: center;
+}
+.techSkillsSection, .softSkillsSection, .expSection, .eduSection {
+    padding: 1px 16px;
+ 
+  }
+
+
+
+
+header {
+    background-color: #191970;
+    color: #f0fff0;
+    text-align: center;
+
+}
+
+nav > a:nth-child(1) > span  {
+    font-size: 34px;
+    color: cyan;
+    margin-right: 20px;
+}
+
+
+nav > a:nth-child(2) > span 
+ {
+    font-size: 34px;
+    color: cyan;
+    margin-right: 20px;
+    
+ }
+
+ nav > span.fas {
+    font-size: 24px;
+    color: cyan;
+    margin-right: 6px;
+ }
+  nav > span:nth-child(4) {
+    font-size: 15px;
+    color: cyan;
+    margin-right: 6px;
+ }
+ 
+.fas {
+    margin: 10px 10px 10px 6px;
+    font-size: 17px;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding-top: 25px;
+    font-stretch: extra-expanded;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size:22px;
+    font-weight: bold;
+    background-color: #90EFBE;
+}
+h3 {
+    margin: 20px 0;
+    font-size: 18px;
+    
+    background-color:antiquewhite;
+    color: #2f4f4f;
+}
+
+ul{
+    list-style: disc;
+    margin-left: 48px;
+}
+
+/*.expSection, .eduSection {
+   padding: 10px 16px;
+   background-color: #e0ffff;
+   
+}*/
+
+/*.expSection h3, .eduSection h3{
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-weight: bolder;
+    font-size:20px;
+    background-color: #90EFBE;
+    
+}*/
+
+h4 {
+   font-size: 15px !important;
+}
+
+.expSection > h4
+ {
+    font-weight: bold;
+    margin-left: 0px;
+    background-color: #cccccc69;
+    text-align: left;
+    padding: 5px;
+    
+}
+.eduSection h4{
+    font-weight: bold !important;
+    margin-left: 30px;
+   
+}
+.expSection h5{    
+    margin: 5px 0px 5px 25px;
+    font-weight: bold !important;
+    font-size: 15px;
+    
+}
+.eduSection h5{    
+    margin: 5px 0px 5px 25px;
+    font-size: 15px;
+    
+}
+footer{
+    color: darkkhaki;
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+    background-color:#191970;
+    font-style: italic;
+    height: 70px;    
+}
+
+/* media query for desktop*/
+@media (min-width:960px) {
+    .leftColumn {    
+        width: 33.33333%;
+        height: 1587px;
+}
+.infoSection > p:nth-child(2) {
+    text-align: center;
+    padding: 2px 17px;
+}
+.rightColumn {
+    width: 66.66666%;
+    margin-bottom: 0px;
+}
+
+.techSkillsSection, .softSkillsSection {
+line-height: 45px;;
+}
+}
+
+/* media query for iPad: @link https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
+@media (min-width: 768px) and (max-width: 1024px) 
+   {
+
+    .leftColumn {    
+        width: 33.33333%;
+        height: 1817px;
+        
+}
+.infoSection > p:nth-child(2) {
+    text-align: center;
+    padding: 2px 17px;
+}
+.rightColumn {
+    width: 66.66666%;
+}
+
+}
+
+
+
+
+
